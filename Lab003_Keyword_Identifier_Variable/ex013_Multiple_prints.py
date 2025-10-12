@@ -1,0 +1,3 @@
+
+
+print("Sam","Jai","Bob")
