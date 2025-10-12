@@ -1,5 +1,5 @@
 
-'''
+
 num1 = float(input("enter num 1"))
 num2 = float(input("enter num 2"))
 
@@ -7,7 +7,7 @@ print(num1+num2 )
 print(num1*num2 )
 print(num1/num2 )
 
-'''
+
 c = 'A'
 print(type(c))
 
