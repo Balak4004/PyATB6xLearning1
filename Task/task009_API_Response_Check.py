@@ -8,6 +8,25 @@ Expected Output Example:
 Attempt 1: Response 500
 Attempt 2: Response 200 '''
 
+attempt = 1
+max_attempt = 3
+response = None
+
+while attempt <= max_attempt:
+    response = int(input("enter the response\t"))
+    if response == 200:
+        print("Test passed")
+        break
+    else:
+        attempt = attempt + 1
+
+if response != 200:
+    print("Test failed after 3 attempts")
+
+
+
+
+'''  another_method
 count = 0
 
 while count < 3:
@@ -23,3 +42,4 @@ while count < 3:
 else:
     print("Test failed")
 
+'''
