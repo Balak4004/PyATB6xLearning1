@@ -1,0 +1,14 @@
+
+
+numbers = [1,2,3,4,5]
+
+def sq(x):
+    return x ** 2
+
+sq_all_numbers = list(map(sq,numbers))
+print(sq_all_numbers)
+
+
+for i in range(1,6):
+    i = i**2
+    print(i)

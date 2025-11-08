@@ -1,6 +1,6 @@
 
 
-# set() = unordered collection and no duplicates
+# set() = unordered collection and no duplicates and mutable and unindexed
 
 my_set = {1,2,3}
 print(my_set)
