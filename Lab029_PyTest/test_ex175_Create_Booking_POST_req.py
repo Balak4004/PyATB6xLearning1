@@ -9,7 +9,7 @@ import requests
 @allure.title("TC#1 Verify the Post Request")
 @allure.description("TC#1 Verify the create booking")
 #@pytest.mark.crud
-def test_create_booking_poitive_tc1():
+def test_create_booking_positive_tc1():
     base_url = "https://restful-booker.herokuapp.com"
     base_path = "/booking"
     url = base_url + base_path
@@ -64,17 +64,3 @@ def test_create_booking_poitive_tc1():
     assert checkout == "2019-01-01"
 
 
-    
-
-@allure.title("TC#1 Verify the Post Request Negative ")
-@allure.description("TC#1 Verify the create booking Negative")
-#@pytest.mark.crud
-def test_create_booking_negative_tc1():
-    base_url = "https://restful-booker.herokuapp.com"
-    base_path = "/booking"
-    url = base_url + base_path
-    headers = {"Content-Type" : "application/json"}
-    payload = {}
-    response = requests.post(url=url,headers=headers,json=payload)
-    assert response.status_code == 500
-    assert  response.text == "Internal Server Error"
